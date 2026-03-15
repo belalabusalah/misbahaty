@@ -64,13 +64,21 @@ class _HomeScreenState extends State<HomeScreen> {
           },
         ),
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("مسبحتي"),
-           Icon(Icons.device_thermostat_sharp),
+            Container(
+              margin: EdgeInsets.only(left: 8),
+              padding: EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: Colors.green.shade600,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Icon(Icons.flash_on_outlined, color: Colors.white),
+            ),
           ],
         ),
         centerTitle: true,
-
       ),
       body: Container(
         padding: EdgeInsets.all(20),
